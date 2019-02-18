@@ -368,6 +368,9 @@
          states. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
+    <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
+    <bool name="config_dozePulsePickup">true</bool>
+
     <!-- Operating volatage for bluetooth controller. 0 by default-->
     <integer translatable="false" name="config_bluetooth_operating_voltage_mv">3300</integer>
 
@@ -496,6 +499,9 @@
     <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
     <bool name="config_swipe_up_gesture_setting_available">true</bool>
 
+    <!-- Whether or not swipe up gesture is enabled by default -->
+    <bool name="config_swipe_up_gesture_default">true</bool>
+
     <!-- Whether device ignores the RSSNR signal implementation -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
     
@@ -505,6 +511,10 @@
           Otherwise, the device may fail to wake out of suspend reliably.
           The default is false. -->
     <bool name="config_suspendWhenScreenOffDueToProximity">true</bool>
+    <bool name="config_proximityCheckOnWake">true</bool>
+    <integer name="config_proximityCheckTimeout">100</integer>
+    <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
+
 
    <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
     <bool name="config_cleanupUnusedFingerprints">false</bool>
@@ -517,6 +527,9 @@
 
     <!-- Whether device supports an alt. ambient display -->
     <bool name="config_alt_ambient_display">false</bool>
+
+    <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
 </resources>
 
 
